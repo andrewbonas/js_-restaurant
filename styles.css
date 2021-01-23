@@ -1,0 +1,61 @@
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom right,#6D6027, #D3CBB8);
+  height: 60px;
+  padding: 0 110px 0 100px;
+}
+
+header div {
+  height: 20px;
+}
+
+button {
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background-color: grey;
+}
+
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/hero.jpg");
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 600px;
+  z-index: -1000;
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+}
+
+#vid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+}
