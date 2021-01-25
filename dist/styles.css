@@ -20,7 +20,7 @@ header {
   padding: 0 110px 0 100px;
 }
 
-button {
+a {
   border-radius: 0.2em;
   box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -33,21 +33,27 @@ button {
   cursor: pointer;
   border: 0.5px solid white;
   background-color: transparent;
+  padding: 5px;
+  margin: 5px;
 }
 
-#hero {
+  .b-tab.hero {
+    display: none;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/hero.jpg");
   min-width: 100%;
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: 80vh;
+  max-height: 80vh;
   width: auto;
   z-index: -1000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   justify-content: center;
   margin-bottom: 0;
+}
+
+.b-tab.hero.active {
+  display: flex;
 }
 
 div #about {
@@ -80,4 +86,31 @@ footer h1{
   margin: 0;
   padding: 10px;
   font-weight: 100;
+}
+
+.menu-tab {
+  background-color: yellow;
+  height: 500px;
+  width: 500px;
+}
+
+#menu .active {
+  display: flex;
+}
+.b-tab {
+  padding: 20px;
+  border: 1px solid #000;
+  display: none;
+}
+
+.b-tab.active {
+  display: block;
+}
+
+.b-nav-tab {
+  display: inline-block;
+}
+
+.b-nav-tab.active {
+  color: #ff4200;
 }
