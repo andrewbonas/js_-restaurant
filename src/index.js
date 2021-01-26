@@ -7,14 +7,14 @@ init();
 function Tabs() {
   var bindAll = function() {
     var menuElements = document.querySelectorAll('[data-tab]');
-    for(var i = 0; i < menuElements.length ; i++) {
+    for (var i = 0; i < menuElements.length; i++) {
       menuElements[i].addEventListener('click', change, false);
     }
   }
 
   var clear = function() {
     var menuElements = document.querySelectorAll('[data-tab]');
-    for(var i = 0; i < menuElements.length ; i++) {
+    for (var i = 0; i < menuElements.length; i++) {
       menuElements[i].classList.remove('active');
       var id = menuElements[i].getAttribute('data-tab');
       document.getElementById(id).classList.remove('active');
@@ -31,10 +31,8 @@ function Tabs() {
 }
 var connectTabs = new Tabs();
 
-
 function init() {
-  console.log('hi');
   loadPage();
-menuPage();
-contactPage();
+  menuPage();
+  contactPage();
 }

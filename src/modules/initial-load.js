@@ -5,11 +5,10 @@ function createrHeader(id, text) {
   name.textContent = text;
   const btnCtn = document.createElement('div');
 
-  const homeBtn = createBtn('home','Home');
+  const homeBtn = createBtn('home', 'Home');
   homeBtn.classList.add('b-nav-tab');
   homeBtn.dataset.tab = 'home-div';
   homeBtn.href = '#home-div';
-
 
   const menuBtn = createBtn('menu', 'Menu');
   menuBtn.classList.add('b-nav-tab');
@@ -39,21 +38,20 @@ function createBtn(id, text) {
 }
 
 function createMain(id) {
-
   const main = document.createElement('main');
   main.classList.add('b-tab');
   main.classList.add('hero');
+  main.classList.add('active');
   main.setAttribute('id', id);
-  const div = document.createElement('div')
-  const aboutBtn = createBtn('about', 'Find Out More');
-  main.appendChild(div);
-  div.appendChild(aboutBtn);
+  const title = document.createElement('h1');
+  title.innerHTML = 'Artisan Bread';
+  main.appendChild(title);
   return main;
 }
 
 function createFooter(id, text) {
   const footer = document.createElement('footer');
-  footer.setAttribute('id',id);
+  footer.setAttribute('id', id);
   const brand = document.createElement('h1');
   brand.textContent = text;
   footer.appendChild(brand);
@@ -63,7 +61,7 @@ function createFooter(id, text) {
 function loadPage() {
   const content = document.getElementById('content');
 
-  const header = createrHeader('header', 'Lettuce B. Frank');
+  const header = createrHeader('header', 'Raw Wheat');
   content.appendChild(header);
 
   const hero = createMain('home-div');
