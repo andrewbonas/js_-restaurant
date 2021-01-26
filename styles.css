@@ -51,7 +51,7 @@ a {
   color: white;
 }
 
-  .b-tab.hero {
+.b-tab.hero {
   z-index: -1000;
   display: none;
   justify-content: center;
