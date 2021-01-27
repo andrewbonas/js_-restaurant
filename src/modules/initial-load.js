@@ -67,7 +67,7 @@ function loadPage() {
   const hero = createMain('home-div');
   content.appendChild(hero);
 
-  const footer = createFooter('footer', 'The Best Rest');
+  const footer = createFooter('footer', 'The Best Bread');
   content.appendChild(footer);
 }
 
